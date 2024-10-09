@@ -1,0 +1,21 @@
+{
+  "name": "duy-theme",
+  "displayName": "duy_theme",
+  "description": "fresh",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.94.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "hello world",
+        "uiTheme": "vs-dark",
+        "path": "./themes/hello world-color-theme.json"
+      }
+    ]
+  }
+}
