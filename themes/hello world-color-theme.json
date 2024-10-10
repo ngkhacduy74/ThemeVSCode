@@ -1,8 +1,8 @@
 {
   "name": "hello world",
   "colors": {
-    "editor.background": "#2a3438",
-    "editor.foreground": "#a6b9b9",
+    "editor.background": "#0d0e0e",
+    "editor.foreground": "#393b3b",
     "activityBarBadge.background": "#007acc",
     "sideBarTitle.foreground": "#bbbbbb"
   },
@@ -12,7 +12,14 @@
       "scope": ["comment", "punctuation.definition.comment"],
       "settings": {
         "fontStyle": "italic",
-        "foreground": "#e23f2a"
+        "foreground": "#e94732"
+      }
+    },
+    {
+      "name": "Return Keyword",
+      "scope": ["keyword.control.flow.return"],
+      "settings": {
+        "foreground": "#d03779" // Màu bạn muốn cho từ khóa return
       }
     },
     {
@@ -54,7 +61,7 @@
       "name": "Data Types",
       "scope": ["support.type", "entity.name.type"],
       "settings": {
-        "foreground": "#99e652" // Mã màu mới (ví dụ: màu cam)
+        "foreground": "#27cae3" // Mã màu mới (ví dụ: màu cam)
       }
     },
 
@@ -86,7 +93,7 @@
         "markup.deleted.git_gutter"
       ],
       "settings": {
-        "foreground": "#e7d4e3"
+        "foreground": "#df9ed1"
       }
     },
     {
@@ -99,7 +106,7 @@
         "keyword.other.special-method"
       ],
       "settings": {
-        "foreground": "#def03a"
+        "foreground": "#d57f2f"
       }
     },
     {
@@ -117,6 +124,14 @@
       }
     },
     {
+      "name": "Await Keyword",
+      "scope": ["keyword.control.await"],
+      "settings": {
+        "foreground": "#b55e3f"
+      }
+    },
+
+    {
       "name": "Number, Constant, Function Argument, Tag Attribute, Embedded",
       "scope": [
         "constant.numeric",
@@ -129,7 +144,7 @@
         "keyword.other"
       ],
       "settings": {
-        "foreground": "#ec9d85"
+        "foreground": "#d67a5e"
       }
     },
     {
@@ -168,6 +183,13 @@
       "scope": ["support.type"],
       "settings": {
         "foreground": "#80b96f"
+      }
+    },
+    {
+      "name": "Export Keyword",
+      "scope": ["keyword.control.export"],
+      "settings": {
+        "foreground": "#752ede"
       }
     },
     {
@@ -560,6 +582,18 @@
       "scope": ["markup.table"],
       "settings": {
         "foreground": "#EEFFFF"
+      }
+    },
+    {
+      "name": "Function Name",
+      "scope": [
+        "entity.name.function", // Tên của hàm khi được khai báo
+        "meta.function-call", // Tên của hàm khi được gọi
+        "support.function", // Hỗ trợ cho các hàm dựng sẵn (built-in)
+        "variable.function" // Biến kiểu hàm
+      ],
+      "settings": {
+        "foreground": "#d47925" // Màu mà bạn muốn
       }
     }
   ]
